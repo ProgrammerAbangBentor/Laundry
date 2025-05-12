@@ -1,7 +1,7 @@
 <div class="main-sidebar sidebar-style-2">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand">
-            <img src="{{ asset('img/logo.png') }}" alt="logo" width="200" >
+            <img src="{{ asset('img/logo.png') }}" alt="logo" width="200">
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
             <a href="index.html">St</a>
@@ -16,32 +16,29 @@
         <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>
             <li class="{{ Request::is('home') ? 'active' : '' }}">
-                <a class="nav-link"
-                    href="{{ url('home') }}"><i class="fa-solid fa-house"></i> <span>Dashboard</span></a>
+                <a class="nav-link" href="{{ url('home') }}"><i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span></a>
             </li>
 
             <li class="menu-header">Starter</li>
             <li class="{{ Request::is('user') ? 'active' : '' }}">
-                <a class="nav-link"
-                    href="{{ url('user') }}"><i class="fa-solid fa-users"></i> <span>Data Users</span></a>
+                <a class="nav-link" href="{{ url('user') }}"><i class="fa-solid fa-users"></i> <span>Data
+                        Users</span></a>
             </li>
             <li class="{{ Request::is('costumer') ? 'active' : '' }}">
-                <a class="nav-link"
-                    href="{{ url('costumer') }}"><i class="fa-solid fa-user"></i> <span>Data Costumer</span></a>
+                <a class="nav-link" href="{{ url('costumer') }}"><i class="fa-solid fa-user"></i> <span>Data
+                        Costumer</span></a>
             </li>
 
             <li class="menu-header">Finance</li>
             <li class="nav-item dropdown {{ $type_menu === 'laundry' ? 'active' : '' }}">
-                <a href="#"
-                class="nav-link has-dropdown"><i class="fas fa-th"></i> <span>Data Finance</span></a>
+                <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i> <span>Data Finance</span></a>
                 <ul class="dropdown-menu">
                     <li class="{{ Request::is('laundry') ? 'active' : '' }}">
-                        <a class="nav-link"
-                        href="{{ url('laundry') }}">Finance</a>
+                        <a class="nav-link" href="{{ url('Finance') }}">Finance</a>
                     </li>
                     <li class="{{ Request::is('laundry') ? 'active' : '' }}">
-                        <a class="nav-link"
-                        href="{{ url('laundry') }}">Harga Laundry</a>
+                        <a class="nav-link" href="{{ url('laundry') }}">Harga Laundry</a>
                     </li>
 
                 </ul>
@@ -49,8 +46,8 @@
 
             <li class="menu-header">Data Transaksi</li>
             <li class="{{ Request::is('order') ? 'active' : '' }}">
-                <a class="nav-link"
-                    href="{{ url('order') }}"><i class="fa-solid fa-cart-shopping"></i> <span>Order</span></a>
+                <a class="nav-link" href="{{ url('order') }}"><i class="fa-solid fa-cart-shopping"></i>
+                    <span>Order</span></a>
             </li>
 
             {{-- <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
@@ -309,7 +306,7 @@
             </li>
         </ul> --}}
 
-        {{-- <div class="hide-sidebar-mini mt-4 mb-4 p-3">
+            {{-- <div class="hide-sidebar-mini mt-4 mb-4 p-3">
             <a href="https://getstisla.com/docs"
                 class="btn btn-primary btn-lg btn-block btn-icon-split">
                 <i class="fas fa-rocket"></i> Documentation

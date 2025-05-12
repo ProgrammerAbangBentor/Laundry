@@ -1,3 +1,4 @@
   <div class="simple-footer">
-      Copyright &copy; Stisla 2018
+      Copyright &copy; 2025 <div class="bullet">desaign by</div><a href="https://nauval.in/">R
+          N</a>
   </div>

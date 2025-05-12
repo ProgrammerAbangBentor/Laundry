@@ -1,10 +1,15 @@
 <?php
 
 use App\Http\Controllers\CostumerController;
+use App\Http\Controllers\DataForDashboardController;
+use App\Http\Controllers\FinanceController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\HargaLaundryController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PendapatanContoller;
+use App\Http\Controllers\PendapatanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,5 +39,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('costumer', CostumerController::class);
     Route::resource('laundry', HargaLaundryController::class);
     Route::resource('order', OrderController::class);
-
+    Route::resource('profile', ProfileController::class);
+    Route::get('/home', [DataForDashboardController::class, 'index'])->name('home');
+    Route::get('/Finance', [FinanceController::class, 'FinanceFix'])->name('finance');
 });
